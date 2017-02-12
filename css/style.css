@@ -1,0 +1,45 @@
+.content {
+  border: 1px solid #ffcf8f;
+  background-color: antiquewhite;
+  padding-left: 4px;
+  border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#tab-1, 
+.ui-tabs, 
+.ui-corner-all, .ui-widget, 
+.ui-widget-content {
+  background-color: aliceblue;
+}
+
+.ui-tabs .ui-tabs-panel {
+  padding-top: 2px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+  color: #6e6a6a !important;
+}
+
+.main-content {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(217,204,217,1);
+-moz-box-shadow: 10px 10px 5px 0px rgba(217,204,217,1);
+box-shadow: 10px 10px 5px 0px rgba(217,204,217,1);
+}
+
+h3, p {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  color: darkgreen;
+}

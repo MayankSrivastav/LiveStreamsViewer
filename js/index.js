@@ -1,10 +1,17 @@
 function twitch(twitchUsers) {		  	
 var html = '';
-	twitchUsers.forEach(function(channelName) {	
-		function url(type, channelName) {
-			return 'https://wind-bow.gomix.me/twitch-api/' + type + '/' + channelName + '?callback=?';
-		};
-		
+	
+	let url = (type, channelName) => {
+		return (
+		  `https://wind-bow.gomix.me/twitch-api/
+		  ${type}
+		  /
+		  ${channelName}
+		  ?callback=?`
+		);
+        };
+	
+	twitchUsers.forEach(function(channelName) {				
 		$.getJSON(url('stream', channelName), function(result) {
 			let game, channelStatus; 
 			if (result.stream === undefined) {

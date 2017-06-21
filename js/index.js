@@ -40,8 +40,17 @@ var html = '';
       } 			
       
 			// Build the html and append to the div
-			html= '<div class="content"><h3><a href="' + streamUrl + '"> ' + displayName
-					+ '</a>' + '</h3><p>Streaming: ' + game + '</p><p>Views: ' + views + '</p></div><hr>';													
+			html =
+			    '<div class="content"><h3><a href="' +
+			    streamUrl +
+			    '"> ' +
+			    displayName +
+			    "</a>" +
+			    "</h3><p>Streaming: " +
+			    game +
+			    "</p><p>Views: " +
+			    views +
+			    "</p></div><hr>";												
 			$('#tabs-1').append(html);			
 		});
 	});			

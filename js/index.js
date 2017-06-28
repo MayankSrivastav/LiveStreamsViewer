@@ -11,6 +11,7 @@ var html = '';
 		);
         };
 	
+	// for every twitch user, get the stream
 	twitchUsers.forEach(function(channelName) {				
 		$.getJSON(url('stream', channelName), function(result) {
 			let game, channelStatus; 
